@@ -22,7 +22,7 @@ model = model_from_json(json_model)
 print(model)
 model.load_weights('weights.hd5f')
 
-data_to_predict = np.asarray([[5.9,3.0,4.2,1.5]])
+data_to_predict = np.asarray([[6.7,3.1,4.4,1.5]])
 
 prediction = model.predict(data_to_predict, batch_size=None, verbose=0, steps=1)
 

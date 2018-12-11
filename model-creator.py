@@ -78,7 +78,7 @@ np_attributes = np.asarray(attributes, dtype=np.float32)
 np_classes = np.asarray(classes, dtype=np.float32)
 
 
-model.fit(np_attributes, np_classes, batch_size=5, epochs=500, validation_split=0.3, verbose=1, shuffle=True)
+model.fit(np_attributes, np_classes, batch_size=5, epochs=5000, validation_split=0.3, verbose=1, shuffle=True)
 
 json_model = model.to_json()
 archtecture_model_file = open('model.json', 'w')
